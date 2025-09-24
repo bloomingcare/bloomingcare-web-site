@@ -778,6 +778,9 @@ body {
     max-width: none;
     padding: 0 20px;
   }
+  .cta-button i {
+    font-size: 1.4rem;
+  }
   
   /* 로고 모바일 크기 조정 */
   .logo h1 {
