@@ -900,3 +900,19 @@ body {
     justify-content: center;
   }
 }
+
+/* 데스크탑 히어로 콘텐츠 왼쪽 정렬 */
+@media (min-width: 1025px) {
+  .hero .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero-content {
+    text-align: left;
+    margin: 0;
+  }
+  .hero-content p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
