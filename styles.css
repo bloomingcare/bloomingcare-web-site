@@ -946,3 +946,14 @@ body {
     display: block;
   }
 }
+
+/* Responsive line break for 438px-495px range */
+.range-break {
+  display: none;
+}
+
+@media (min-width: 438px) and (max-width: 495px) {
+  .range-break {
+    display: block;
+  }
+}
