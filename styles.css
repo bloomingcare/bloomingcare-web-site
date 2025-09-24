@@ -28,6 +28,7 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
   background-color: #fff;
+  word-break: keep-all;
 }
 
 .container {
