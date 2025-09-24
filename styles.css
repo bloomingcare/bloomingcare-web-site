@@ -76,7 +76,14 @@ body {
 }
 .logo {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #34495E;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-image {
+  height: 32px;
+  width: auto;
 }
 .logo h1 {
   font-size: 28px;
@@ -764,6 +771,9 @@ body {
   /* 로고 모바일 크기 조정 */
   .logo h1 {
     font-size: 22px;
+  }
+  .logo-image {
+    height: 26px;
   }
   
   /* 센터 소개 모바일 */
