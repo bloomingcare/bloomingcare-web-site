@@ -921,3 +921,14 @@ body {
     margin-right: 0;
   }
 }
+
+/* Responsive line breaks */
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 362px) {
+  .mobile-break {
+    display: block;
+  }
+}
