@@ -1152,3 +1152,14 @@ body {
     display: block;
   }
 }
+
+/* Responsive line break for 372px-396px range */
+.range-break-372-396 {
+  display: none;
+}
+
+@media (min-width: 372px) and (max-width: 396px) {
+  .range-break-372-396 {
+    display: block;
+  }
+}
