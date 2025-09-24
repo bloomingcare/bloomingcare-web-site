@@ -865,9 +865,12 @@ body {
   .facilities-text {
     text-align: center;
   }
+  .facilities-text h2 {
+    word-break: break-all;
+  }
   .facility-thumbnails {
       max-width: 100%;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
       justify-content: center;
       margin: 0 auto;
   }
