@@ -142,25 +142,36 @@ body {
 
 /* 2. 새롭게 디자인된 히어로 섹션 */
 .hero {
-  height: 650px;
-  background-image: url('https://images.unsplash.com/photo-1605809099233-a3a0553a0429?w=1920&h=1080&fit=crop');
+  height: 100vh;
+  background-image: url('images/히어로이미지.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   position: relative;
   color: white;
 }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(30, 60, 110, 0.7), rgba(59, 130, 246, 0.4));
+  background: linear-gradient(120deg, rgba(30, 60, 110, 0.6), rgba(59, 130, 246, 0.3));
 }
+.hero .container {
+  max-width: none;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
 .hero-content {
-  text-align: center;
+  text-align: left;
   z-index: 2;
   position: relative;
+  max-width: 1200px;
+  margin: 0;
+  padding-left: 400px;
 }
 .hero-content h1 {
   font-size: 3.2rem;
@@ -176,7 +187,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 45px;
   max-width: 650px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   line-height: 1.8;
   opacity: 0.95;
@@ -714,7 +725,15 @@ body {
 
 @media (max-width: 768px) {
   .section-title h2, .about-text h2, .hero-content h1 { font-size: 2.2rem; }
-  .hero { height: 550px; }
+  .hero { height: 100vh; }
+  
+  .hero-content {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+    padding: 0 20px;
+  }
   
   /* 로고 모바일 크기 조정 */
   .logo h1 {
