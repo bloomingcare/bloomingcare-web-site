@@ -1141,3 +1141,14 @@ body {
     display: block;
   }
 }
+
+/* Responsive line break for >= 1064px */
+.desktop-break-1064 {
+  display: none;
+}
+
+@media (min-width: 1064px) {
+  .desktop-break-1064 {
+    display: block;
+  }
+}
