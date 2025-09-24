@@ -691,10 +691,12 @@ body {
 .consultation-info li {
   padding: 5px 0;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .consultation-info li i {
   color: var(--secondary-color);
+  flex-shrink: 0;
 }
 .modal-footer {
   padding: 20px 30px;
