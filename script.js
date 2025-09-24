@@ -162,26 +162,33 @@ document.addEventListener('DOMContentLoaded', function () {
   // 네비게이션 바 전화번호 복사 기능
   // ------------------
   const headerPhoneNumber = document.getElementById('headerPhoneNumber');
-  if (headerPhoneNumber) {
-      headerPhoneNumber.addEventListener('click', () => {
-          const phoneNumber = '031-772-9190';
-          navigator.clipboard.writeText(phoneNumber).then(() => {
-              const originalContent = headerPhoneNumber.innerHTML;
-              headerPhoneNumber.innerHTML = '<i class="fas fa-check"></i> <span>복사 완료!</span>';
-              headerPhoneNumber.style.background = 'var(--secondary-color)';
-              headerPhoneNumber.style.borderColor = 'var(--secondary-color)';
-              
-              setTimeout(() => {
-                  headerPhoneNumber.innerHTML = originalContent;
-                  headerPhoneNumber.style.background = '';
-                  headerPhoneNumber.style.borderColor = '';
-              }, 1000);
-          }).catch(err => {
-              console.error('복사 실패:', err);
-              alert('전화번호 복사에 실패했습니다.');
+  const mobilePhoneNumber = document.getElementById('mobilePhoneNumber');
+  
+  function addPhoneCopyFunction(element) {
+      if (element) {
+          element.addEventListener('click', () => {
+              const phoneNumber = '031-772-9190';
+              navigator.clipboard.writeText(phoneNumber).then(() => {
+                  const originalContent = element.innerHTML;
+                  element.innerHTML = '<i class="fas fa-check"></i> <span>복사 완료!</span>';
+                  element.style.background = 'var(--secondary-color)';
+                  element.style.borderColor = 'var(--secondary-color)';
+                  
+                  setTimeout(() => {
+                      element.innerHTML = originalContent;
+                      element.style.background = '';
+                      element.style.borderColor = '';
+                  }, 1000);
+              }).catch(err => {
+                  console.error('복사 실패:', err);
+                  alert('전화번호 복사에 실패했습니다.');
+              });
           });
-      });
+      }
   }
+  
+  addPhoneCopyFunction(headerPhoneNumber);
+  addPhoneCopyFunction(mobilePhoneNumber);
   
   console.log('블루밍케어 방문요양센터 웹사이트 로딩 완료!');
 });
