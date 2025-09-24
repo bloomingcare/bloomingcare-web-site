@@ -935,3 +935,14 @@ body {
     display: block;
   }
 }
+
+/* Responsive line break for footer (371px) */
+.mobile-break-371 {
+  display: none;
+}
+
+@media (max-width: 371px) {
+  .mobile-break-371 {
+    display: block;
+  }
+}
