@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- 문서 기본 설정 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>블루밍케어방문요양센터 | 양평군 어르신 맞춤 돌봄</title>
+
+    <!-- 페이지 정보 -->
+    <title>
+      양평방문요양센터 | 블루밍케어 방문요양 | 요양보호사 돌봄 서비스
+    </title>
     <meta
       name="description"
-      content="양평군 블루밍케어 방문요양센터입니다. 내 집에서 편안하게, 전문가의 따뜻한 돌봄을 받으세요. 노인장기요양보험 신청부터 맞춤 케어까지 함께합니다."
+      content="양평군 어르신 맞춤 방문요양서비스, 블루밍케어 방문요양센터입니다. 장기요양보험 상담부터 요양보호사의 따뜻한 돌봄까지 — 양평 요양서비스 전문기관."
+    />
+    <meta
+      name="keywords"
+      content="양평 방문요양센터, 양평요양센터, 블루밍케어, 요양보호사, 장기요양보험, 방문요양, 양평군 방문요양, 어르신 돌봄, 요양상담, 재가요양, 양평 요양보호사, 양평 노인요양, 요양서비스, 요양기관"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SNS 및 공유용 정보 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="블루밍케어 방문요양센터" />
+    <meta
+      property="og:title"
+      content="양평방문요양센터 | 블루밍케어 방문요양센터"
+    />
+    <meta
+      property="og:description"
+      content="양평군 어르신 방문요양서비스 — 장기요양보험, 요양보호사 상담, 무료 방문상담 가능합니다."
+    />
+    <meta
+      property="og:image"
+      content="https://양평방문요양센터.com/images/대표이미지.jpg"
+    />
+    <meta property="og:url" content="https://양평방문요양센터.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="양평방문요양센터 | 블루밍케어 방문요양센터"
+    />
+    <meta
+      name="twitter:description"
+      content="양평군 어르신 방문요양서비스 — 요양보호사 상담, 장기요양보험 신청, 무료 방문상담 안내."
+    />
+    <meta
+      name="twitter:image"
+      content="https://양평방문요양센터.com/images/대표이미지.jpg"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- 사이트 인증용 (네이버, 구글 Search Console 등록 후 코드 교체) -->
+    <meta name="naver-site-verification" content="여기에_네이버_인증코드" />
+    <meta name="google-site-verification" content="여기에_구글_인증코드" />
+
+    <!-- 사업장 정보 구조화 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "블루밍케어 방문요양센터",
+        "alternateName": "양평방문요양센터",
+        "description": "양평군 어르신 맞춤 방문요양서비스 — 장기요양보험 상담부터 요양보호사 돌봄까지, 블루밍케어 방문요양센터입니다.",
+        "image": "https://양평방문요양센터.com/images/대표이미지.jpg",
+        "telephone": "+82-31-772-9190",
+        "email": "choi9190@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "경기도 양평군 중앙로167번길 62-1, 2층 205호",
+          "addressLocality": "양평군",
+          "addressRegion": "경기도",
+          "postalCode": "12549",
+          "addressCountry": "KR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "37.4949397",
+          "longitude": "127.484203"
+        },
+        "url": "https://양평방문요양센터.com/",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "sameAs": [
+          "https://blog.naver.com/bloomingcare9190",
+          "https://map.naver.com/p/entry/place/2076452096",
+          "https://www.google.com/maps/place/블루밍케어방문요양센터"
+        ]
+      }
+    </script>
+
+    <!-- 리소스 및 스타일 -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -18,7 +99,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
@@ -59,12 +140,18 @@
         <div class="container">
           <div class="hero-content">
             <h1>
-              내 집에서 누리는<br class="range-break" /> 편안함,<br class="break-575" /> 전문가<br class="range-break" />의
+              내 집에서 누리는<br class="range-break" />
+              편안함,<br class="break-575" />
+              전문가<br class="range-break" />의
               <span class="highlight">따뜻한 돌봄</span>
             </h1>
             <p>
-              블루밍케어는 어르신의 행복한<br class="range-break-372-396" /><br class="range-break" /> 일상과 가족의 든든한 <br />
-              평안을 위해 양평 지역<br class="range-break" /> 전문 요양보호사가 직접 찾아갑니다.
+              블루밍케어는 어르신의 행복한<br class="range-break-372-396" /><br
+                class="range-break"
+              />
+              일상과 가족의 든든한 <br />
+              평안을 위해 양평 지역<br class="range-break" />
+              전문 요양보호사가 직접 찾아갑니다.
             </p>
             <button class="cta-button">
               <i class="fas fa-house-chimney-user"></i> 무료 방문상담 신청하기
@@ -76,10 +163,18 @@
       <section id="services" class="services-intro">
         <div class="container">
           <div class="section-title">
-            <h2>블루밍케어는<br class="mobile-break-371" /> 어떤<br class="range-break" /> 도움을<br class="mobile-break-371" /> 드리나요?</h2>
+            <h2>
+              블루밍케어는<br class="mobile-break-371" />
+              어떤<br class="range-break" />
+              도움을<br class="mobile-break-371" />
+              드리나요?
+            </h2>
             <p>
-              어르신의 행복한 노후와 가족의 평안을<br class="mobile-break-371" /> 위해<br class="range-break" /> 꼭 필요한 서비스를
-              제공합니다.
+              어르신의 행복한 노후와 가족의 평안을<br
+                class="mobile-break-371"
+              />
+              위해<br class="range-break" />
+              꼭 필요한 서비스를 제공합니다.
             </p>
           </div>
           <div class="service-cards">
@@ -90,7 +185,8 @@
               <h3>신체활동 및 가사지원</h3>
               <p>
                 세면, 식사, 이동 도움 등 기본적인 일상생활은 물론, 어르신과
-                관련된 청소, 빨래, 장보기 등 가사 활동을 지원하여 쾌적한 환경을<br class="range-break" />
+                관련된 청소, 빨래, 장보기 등 가사 활동을 지원하여 쾌적한
+                환경을<br class="range-break" />
                 만들어 드립니다.
               </p>
             </div>
@@ -107,7 +203,8 @@
               <h3>장기요양보험 상담</h3>
               <p>
                 복잡하고 어려운 노인장기요양보험 등급 신청부터 이용 절차까지,
-                모든 과정을 친절하고 꼼꼼하게<br class="mobile-break-371" /> 안내해 드립니다.
+                모든 과정을 친절하고 꼼꼼하게<br class="mobile-break-371" />
+                안내해 드립니다.
               </p>
             </div>
           </div>
@@ -122,31 +219,36 @@
               돌봅니다
             </h2>
             <p>
-              블루밍케어는 수년간<br class="mobile-break" /> 양평 지역 어르신들을 돌봐온<br class="mobile-break" /> 노하우를
-              바탕으로, <br />
-              어르신 개개인의 건강 상태와<br class="mobile-break-371" /> 생활 환경에 꼭 맞는 1:1 맞춤<br class="mobile-break-371" />
+              블루밍케어는 수년간<br class="mobile-break" />
+              양평 지역 어르신들을 돌봐온<br class="mobile-break" />
+              노하우를 바탕으로, <br />
+              어르신 개개인의 건강 상태와<br class="mobile-break-371" />
+              생활 환경에 꼭 맞는 1:1 맞춤<br class="mobile-break-371" />
               케어 플랜을 제공합니다.
             </p>
             <ul class="strengths">
               <li class="fade-in">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                  <strong>검증된 전문 요양보호사:</strong><br class="mobile-break-371" /> 풍부한 경험과 따뜻한
-                  마음을 가진 분들만 함께합니다.
+                  <strong>검증된 전문 요양보호사:</strong
+                  ><br class="mobile-break-371" />
+                  풍부한 경험과 따뜻한 마음을 가진 분들만 함께합니다.
                 </div>
               </li>
               <li class="fade-in">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                  <strong>체계적인 맞춤 케어 시스템:</strong><br class="mobile-break-371" /> 어르신별 맞춤
-                  계획을 수립하고 정기적으로 관리합니다.
+                  <strong>체계적인 맞춤 케어 시스템:</strong
+                  ><br class="mobile-break-371" />
+                  어르신별 맞춤 계획을 수립하고 정기적으로 관리합니다.
                 </div>
               </li>
               <li class="fade-in">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                  <strong>가족과의 꾸준한 소통:</strong><br class="mobile-break-371" /> 정기적인 상담을 통해
-                  가족의 걱정을 덜어드립니다.
+                  <strong>가족과의 꾸준한 소통:</strong
+                  ><br class="mobile-break-371" />
+                  정기적인 상담을 통해 가족의 걱정을 덜어드립니다.
                 </div>
               </li>
             </ul>
@@ -159,10 +261,18 @@
           <div class="facilities-content">
             <div class="facilities-text fade-in">
               <h2>
-                블루밍케어<br class="range-break-372-396" /><br class="mobile-break-371" />방문요양센터<br /> 시설을 소개합니다
+                블루밍케어<br class="range-break-372-396" /><br
+                  class="mobile-break-371"
+                />방문요양센터<br />
+                시설을 소개합니다
               </h2>
               <p>
-                양평군 지역 어르신과 가족<br class="range-break" /> 모두가 안심할 수 있도록,<br class="desktop-break-1064" /><br class="range-break" /> 블루밍케어는 편안하고 믿을 수 있는<br class="range-break" /> 요양 환경을 준비했습니다.
+                양평군 지역 어르신과 가족<br class="range-break" />
+                모두가 안심할 수 있도록,<br class="desktop-break-1064" /><br
+                  class="range-break"
+                />
+                블루밍케어는 편안하고 믿을 수 있는<br class="range-break" />
+                요양 환경을 준비했습니다.
               </p>
               <div class="facility-thumbnails">
                 <img src="images/시설1.jpg" alt="시설1" />
@@ -185,7 +295,10 @@
         <div class="container">
           <div class="section-title">
             <h2>자주 묻는 질문 (FAQ)</h2>
-            <p>블루밍케어 방문요양 서비스에 대해<br class="mobile-break-371" /> 궁금한 점들을 모았습니다.</p>
+            <p>
+              블루밍케어 방문요양 서비스에 대해<br class="mobile-break-371" />
+              궁금한 점들을 모았습니다.
+            </p>
           </div>
           <div class="faq-container">
             <details class="faq-item fade-in">
@@ -303,7 +416,9 @@
             <div class="footer-info">
               <p><strong>대표:</strong> 최진숙</p>
               <p>
-                <strong>주소:</strong> 경기도 양평군 중앙로167번길 62-1<br class="mobile-break-371" />
+                <strong>주소:</strong> 경기도 양평군 중앙로167번길 62-1<br
+                  class="mobile-break-371"
+                />
                 2층 205호
               </p>
               <p><strong>이메일:</strong> choi9190@gmail.com</p>
@@ -348,7 +463,10 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© 2025 블루밍케어방문요양센터.<br class="mobile-break-371" /> All rights reserved.</p>
+          <p>
+            © 2025 블루밍케어방문요양센터.<br class="mobile-break-371" />
+            All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
@@ -361,7 +479,8 @@
         </div>
         <div class="modal-body">
           <p class="modal-intro">
-            궁금한 점을 문의해주시면<br class="mobile-break-371" /> 전문 사회복지사가<br />
+            궁금한 점을 문의해주시면<br class="mobile-break-371" />
+            전문 사회복지사가<br />
             친절하게 상담해 드립니다.
           </p>
           <div class="contact-methods">

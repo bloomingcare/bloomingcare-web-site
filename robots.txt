@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /images/
+Disallow: /assets/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+
+Sitemap: https://양평방문요양센터.com/sitemap.xml
